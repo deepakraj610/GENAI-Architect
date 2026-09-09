@@ -1,0 +1,16 @@
+[
+    {
+        "Name": "Deepak Raj",
+        "Phone": "(+91)9884301866",
+        "Sent_Status": "Success",
+        "Screenshot_Path": "sent_DeepakRaj_(+91)9884301866.png",
+        "Extracted_Messages": []
+    },
+    {
+        "Name": "Dad",
+        "Phone": "(+91)9840709960",
+        "Sent_Status": "Success",
+        "Screenshot_Path": "sent_Dad_(+91)9840709960.png",
+        "Extracted_Messages": []
+    }
+]
