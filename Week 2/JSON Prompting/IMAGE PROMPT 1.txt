@@ -1,0 +1,10 @@
+{
+  "subject": "A classical Bharatanatyam dancer in an expressive Aramandi mid-pose, adorned in vibrant silk costume, temple jewellery, and intricate ghungroos",
+  "setting": "An ancient stone-pillared mandapam of a South Indian temple with rich heritage carvings",
+  "visual_style": "Cinematic portrait photography with sharp focus on the dancer's expressive mudras and costume details",
+  "colour_palette": "Vibrant temple red, peacock green, rich gold zari, and sandstone brown",
+  "lighting": "Dramatic warm golden hour sunlight streaming through the stone pillars, creating a halo effect",
+  "mood": "Graceful, dynamic, devotional, and powerful",
+  "composition": "Full-body wide shot, centered, emphasizing symmetry and sculptural posture",
+  "aspect_ratio": "9:16"
+}

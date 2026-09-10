@@ -1,0 +1,10 @@
+{
+  "subject": "The three specific children participating in a Ganesh Chaturthi pooja: an older girl with dark hair wearing a deep purple embroidered dress, a toddler girl with a top-knot wearing a peach and purple pattu pavada with hands in a prayer pose, and a smiling young boy wearing a cream shirt and a traditional veshti, all gathered around a beautifully decorated clay Ganesha idol",
+  "setting": "A traditional Tamil Nadu home living room adorned with a fresh mango leaf thoranam, glowing brass kuthuvilaku lamps, and vibrant marigold flower decorations",
+  "visual_style": "Photorealistic cultural portrait photography, with sharp focus on traditional attire textures and festive elements",
+  "colour_palette": "Festive marigold yellow, temple gold, deep purple, peach, and warm earthy tones",
+  "lighting": "Warm, soft indoor glow from traditional oil lamps casting gentle highlights on the children and the idol",
+  "mood": "Devotional, joyous, warm, and celebratory",
+  "composition": "Medium full shot, eye-level angle framing the three children together around the festive setup",
+  "aspect_ratio": "16:9"
+}
