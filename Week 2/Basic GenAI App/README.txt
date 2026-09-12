@@ -1,59 +1,88 @@
-# GenAI Restricted Trivia App 🧠
+# ⏳ Time Capsule Trivia Master
 
-A specialized interactive web application built with [Streamlit](https://streamlit.io/) and [LangChain](https://www.langchain.com/) that delivers fascinating trivia about **Science** and **Sports** for events, history, and discoveries up to the year **2021**.
-
-## Features
-
-- **Topic Restriction Guardrails:** Strictly restricts answers to Science and Sports domains. Any unrelated topics (e.g., movies, pop culture, cooking) trigger a polite restriction message.
-- **Temporal Constraint:** Ensures all historical facts and trivia adhere strictly to a cut-off year of 2021, avoiding post-2021 milestones.
-- **Interactive UI:** Clean and simple Streamlit web interface for easy topic input and instant feedback.
-
-## Tech Stack
-
-- **Python 3.8+**
-- **Streamlit** (Frontend UI)
-- **LangChain** (LLM Orchestration & Prompt Management)
-- **OpenAI GPT-3.5 Turbo** (Language Model)
-- **python-dotenv** (Environment Variable Management)
+An interactive, constraint-aware GenAI application built with Python, LangChain, and Streamlit. This app uncovers fascinating historical facts and trivia specifically for **Science** and **Sports** topics up to the year **2021**, using strict prompt guardrails to filter out off-topic queries and post-2021 events.
 
 ---
 
-## Installation & Setup
+## 🚀 Features
 
-### 1. Clone the Repository
-Clone this repository or save the script as `main.py` in your local directory.
+- **LangChain Integration:** Utilizes prompt templates, OpenAI chat models (`gpt-3.5-turbo`), and string output parsers for clean generation.
+- **Strict Guardrails & Constraints:** Configured with robust system prompts to restrict scope exclusively to Science and Sports, capping historical context at 2021.
+- **Creative Streamlit UI:** Features a polished layout with domain selection, dynamic status spinners, and a persistent discovery log session history (`st.session_state`).
+- **Environment Security:** Securely loads API keys using `python-dotenv`.
 
-### 2. Install Dependencies
-Make sure you have Python installed, then install the required packages using pip:
+---
 
+## 🛠️ Prerequisites & Installation
+
+Follow these step-by-step instructions to set up and run the application locally.
+
+### 1. Clone or Open Project Folder
+Navigate to your project directory in your terminal:
 ```bash
-pip install streamlit langchain langchain-openai langchain-core python-dotenv openai
+cd C:\Users\DELL\MyfirstGenAIapp\MyFirstGenAIApp
 ```
 
-### 3. Configure Environment Variables
-Create a `.env` file in the root directory of your project and add your OpenAI API key:
+### 2. Create and Activate a Virtual Environment
+```bash
+# Create the virtual environment
+python -m venv MyFirstGenAIApp
 
+# Activate it (PowerShell)
+.\MyFirstGenAIApp\Scripts\Activate.ps1
+```
+*(Note: If you encounter script execution permission errors in PowerShell, run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` first.)*
+
+### 3. Install Dependencies
+Install the required Python packages inside your active virtual environment:
+```bash
+pip install streamlit langchain langchain-openai python-dotenv
+```
+
+---
+
+## ⚙️ Configuration
+
+1. Create a file named `.env` in your root project folder.
+2. Add your OpenAI API key inside the file:
 ```env
-OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_API_KEY="your-actual-openai-api-key-here"
 ```
 
 ---
 
-## Running the Application
+## 🚀 Running the Application
 
-To run the Streamlit app locally, execute the following command in your terminal:
-
+1. Ensure your virtual environment is active and your `app.py` script is saved in the directory.
+2. Launch the Streamlit application:
 ```bash
-streamlit run main.py
+streamlit run app.py
 ```
-
-This will launch a local web server and open the app automatically in your default web browser (typically at `http://localhost:8501`).
+3. Streamlit will automatically open a local web browser window (typically `http://localhost:8501`) displaying your Time Capsule Trivia app!
 
 ---
 
-## Usage Guide
+## 📂 Project Structure
 
-1. Open the application in your browser.
-2. Enter a **Science** or **Sports** topic (e.g., *FIFA*, *Quantum Physics*, *Space Exploration*, *Basketball*) into the text box.
-3. Click the **"Get Trivia!"** button.
-4. View the verified, historically accurate trivia generated within the 2021 cutoff window.
+```text
+MyfirstGenAIapp/
+│
+├── MyFirstGenAIApp/
+│   ├── Include/
+│   ├── Lib/
+│   ├── Scripts/
+│   ├── app.py             # Streamlit application code
+│   └── main.py            # CLI/terminal version of the GenAI app
+│
+├── .env                   # Environment variables (API keys)
+└── README.md              # Project documentation
+```
+
+---
+
+## 💡 How It Works
+
+1. **User Input:** Selects a domain (`Science` or `Sports`) and enters a specific query topic (e.g., `Quantum Mechanics`, `FIFA World Cup`).
+2. **Constraint Check:** The LangChain model evaluates the input against strict negative and positive constraints defined in the system prompt.
+3. **Generation:** If valid and within the 2021 historical threshold, a verified trivia fact is returned. Otherwise, a polite boundary message is displayed.
+4. **History Log:** Past searches are stored in Streamlit's session state and displayed in a neat chronological discovery card log.
